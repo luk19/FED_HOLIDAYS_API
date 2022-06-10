@@ -28,7 +28,7 @@ namespace Holiday_API
             // Get current project path --> "Replace" functions used so myCurrentDirectory variable works from the Unit_Tests.. directory on both Mac and Windows
             var myCurrentDirectory = Environment.CurrentDirectory.Replace("Unit_Tests_for_Holiday_API/bin/Debug/net6.0", "Holiday_API").Replace("Unit_Tests_for_Holiday_API\\bin\\Debug\\net6.0", "Holiday_API");
             
-            // Date Input Verification
+            // Date Input Verification --> first if statement = look for empty string. Second if statement = look for invalid ISO 8601 format
             DateTime dateTime;
             string expectedFormat = "yyyy-MM-dd HH:mm:ss:fff";
             string emptyString = "";

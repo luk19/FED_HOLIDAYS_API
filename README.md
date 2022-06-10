@@ -39,7 +39,7 @@ Simple API built in C# that returns information on US Federal Holidays given dat
 ## Assumptions Made
 - I assumed the accepted date could be simply added at the end of the url request (https://localhost:9999/endpoint/date) rather than submitted as a parameter.
 - I assumed it was okay for the user/evaluator of this project to use an IDE to build and run the project rather than building and running it on a server or command line interface.
-
+- I assumed the user/evaluator could be using a Mac OR Windows machine, so had to test the project in both environments. This exercise actually proved helpful in finding a bug with directory formatting. ie macs using / and windows using \.
 
 
 
