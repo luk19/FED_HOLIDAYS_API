@@ -34,11 +34,11 @@ namespace Holiday_API
             string emptyString = "";
             if (dateSelected == emptyString)
             {
-                return "{ERROR: \"No date was given for endpoint /isHoliday\"}";
+                return "{\"ERROR\": \"No date was given for endpoint /isHoliday\"}";
             }
             if (!DateTime.TryParseExact(dateSelected, expectedFormat, CultureInfo.InvariantCulture, DateTimeStyles.None, out dateTime))
             {
-                return "{ERROR: \"Input date does not match ISO 8601 Format\", ExpectedFormatExample: \"2021-01-01 14:00:00:123\"}";
+                return "{\"ERROR\": \"Input date does not match ISO 8601 Format\", \"ExpectedFormatExample\": \"2021-01-01 14:00:00:123\"}";
             }
 
             // SQLite database connection
@@ -67,11 +67,11 @@ namespace Holiday_API
                 string Name = row["Name"].ToString();
                 string Description = row["Description"].ToString();
                 string Fixed_or_Floating = row["Fixed_or_Floating"].ToString();
-                holidayData = "{ID: " + ID + ", isHoliday: " + wasDataReturned + ", Date: \"" + Date + "\", Name: \"" + Name + "\", Description: \"" + Description + "\", Fixed_or_Floating: \"" + Fixed_or_Floating + "\"}";
+                holidayData = "{\"ID\": " + ID + ", \"isHoliday\": " + wasDataReturned + ", \"Date\": \"" + Date + "\", \"Name\": \"" + Name + "\", \"Description\": \"" + Description + "\", \"Fixed_or_Floating\": \"" + Fixed_or_Floating + "\"}";
             }
             if (!wasDataReturned)
             {
-                holidayData = "{isHoliday: " + wasDataReturned + ", Date: \"" + dateSelected + "\"}";
+                holidayData = "{\"isHoliday\": " + wasDataReturned + ", \"Date\": \"" + dateSelected + "\"}";
                 Console.WriteLine("SQL command returned nothing.. Date is not a holiday!");
             }
             

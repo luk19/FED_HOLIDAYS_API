@@ -8,7 +8,7 @@ Simple API built in C# that returns information on US Federal Holidays given dat
 2. If not already installed, download and install your preferred C# IDE ([JetBrains Rider](https://www.jetbrains.com/rider/download/#section=mac) or [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) recommended)
 3. Clone the [FED_HOLIDAYS_API](https://github.com/luk19/FED_HOLIDAYS_API) Repository to your installed C# IDE
 4. Open the Holiday_API solution and Holiday_API project folder
-5. If not already installed, install the "System.Data.SQLite" package on your C# IDE --> (right click on the main "ProjectFile" folder, click "Manage NuGet Packages", search for "System.Data.SQLite", click the appropriate package and add it to the project)
+5. If not already installed, install the "System.Data.SQLite" package on your C# IDE --> (right click on the "Holiday_API" C# project folder, click "Manage NuGet Packages", search for "System.Data.SQLite", click the appropriate package and add it to the project)
 6. With the Holiday_API project open in your C# IDE, open "Program.cs"
 7. Run "Program.cs" (In Rider --> Click the "Run" button near the top right corner of the application) and (In Visual Studio --> click the "Run" symbol near the top left corner of the application)
 8. In the output/console, the script should print the url and port number that this app is "listening" on, example: Now listening on: https://localhost:5001
@@ -56,7 +56,7 @@ and understand I have a lot more to learn.
 
 
 ## Time Spent
-- 18 hours
+- 19 hours
 
 
 
