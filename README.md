@@ -49,7 +49,7 @@ Simple API built in C# that returns information on US Federal Holidays given dat
 ## General Notes
 Overall, I'm extremely happy with the outcome of this project. When I read the first sentence of the Assignment description "Build a simple API, preferably in C#",
 I was a bit overwhelmed because I had never built an API and I had never coded a single line of C# before. It was challenging in many ways and I was seriously ecstatic
-that I was able to dive in and complete this project. I think my lack of C# experience is evident in the code, which I think is okay because I had fun, learned a lot,
+that I was able to dive in and complete this project. My lack of C# experience is likely evident in the code, which I think is okay because I had fun, learned a lot,
 and understand I have a lot more to learn.
 
 
