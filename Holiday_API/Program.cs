@@ -1,5 +1,6 @@
 ﻿// Title: API Project for US Federal Holidays
 // Start Date: June 4th, 2022
+// End Date: June 9th, 2022
 // Developer: Luke Browning
 
 
@@ -16,13 +17,11 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 
 
-
 namespace Holiday_API
 {
     public class Program
     {
         
-        // static JsonResult GetHolidayData(string dateSelected)  
         public static string GetHolidayData(string dateSelected)  
         {
             
@@ -89,7 +88,7 @@ namespace Holiday_API
             
             // Simple API Build & Run
             var app = WebApplication.CreateBuilder(args).Build();
-            app.MapGet("/", () => "Hello World!");
+            app.MapGet("/", () => "Hello Federal Holidays API User! Please see the following endpoint example to get started: base-url/isHoliday/2021-01-01 14:00:00:123");
             app.MapGet("/isHoliday", () =>
             {
                 string dateSelected = "";
