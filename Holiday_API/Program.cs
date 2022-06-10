@@ -25,9 +25,9 @@ namespace Holiday_API
         public static string GetHolidayData(string dateSelected)  
         {
             
-            // Get current project path
-            var myCurrentDirectory = Environment.CurrentDirectory.Replace("Unit_Tests_for_Holiday_API/bin/Debug/net6.0", "Holiday_API");
-
+            // Get current project path --> "Replace" functions used so myCurrentDirectory variable works from the Unit_Tests.. directory on both Mac and Windows
+            var myCurrentDirectory = Environment.CurrentDirectory.Replace("Unit_Tests_for_Holiday_API/bin/Debug/net6.0", "Holiday_API").Replace("Unit_Tests_for_Holiday_API\\bin\\Debug\\net6.0", "Holiday_API");
+            
             // Date Input Verification
             DateTime dateTime;
             string expectedFormat = "yyyy-MM-dd HH:mm:ss:fff";
