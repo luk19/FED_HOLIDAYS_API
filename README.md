@@ -64,7 +64,7 @@ and understand I have a lot more to learn.
 ## Problems/Issues
 I don't think at any point during this project I ran into a "Wall" that I could not break through, but below is a list of obstacles that I think I spent extra time figuring out:
 - SQL Data --> Iterating through and visualizing (printing) the data from the SQLite database in C# was the first challenge I faced. I would consider myself advanced at this in Python, but it took some time to figure out the syntax in C#, and I still don't think I executed it in the cleanest way, but it works.
-- Unit Tests --> Before this project, I must admit that I had never written a unit test before. Figuring out the proper connections and project calls to perform the unit tests (like "calling a static method in non-static context") definitely took some time. Conceptually, I understand unit tests, but I would love to learn more about their purpose and how to build unit tests that make your code stronger. At the end of the day, building these unit tests forced me to think about different scenarios and write logic to deal with those scenarios.
+- Unit Tests --> Before this project, I must admit that I had never written a unit test before. Figuring out the proper connections and project calls to perform the unit tests (like "calling a static method in non-static context") definitely took some time. Conceptually, I understand unit tests, but I would love to learn more about their purpose and how to build unit tests that make your code stronger. At the end of the day, building these unit tests forced me to think about different scenarios and write logic to deal with those scenarios, which I thought was pretty cool.
 
 
 
@@ -72,6 +72,7 @@ I don't think at any point during this project I ran into a "Wall" that I could 
 ## Enhancements (if I had the time)
 - Adding user authentication logic with an API token
 - Adding an input option and endpoint for a date range rather than a specific date that would return all holidays in a specified date range.
+- Day-ahead Alert --> setup a cron task that runs once a day, queries the database, and sends users an alert message if the next day is a Holiday.
 - Easter Egg Dates --> if a user entered a date from 2021-2023 that has already passed and was _not_ a holiday, return the required "isHoliday: false" but also add an interesting fact from that date like "FactFromDate: Florida Man gets head-butted by Alligator."
 
 
